@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg_main_img"
+    android:paddingStart="12dp"
+    android:paddingTop="230dp">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/second_item"
+        />
+
+</LinearLayout>

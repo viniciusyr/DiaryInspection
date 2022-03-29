@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DiaryInspection</string>
+    <string name="string_insert_appointment">INSERIR APONTAMENTO</string>
+    <string name="hint_fm">Pedido (Ex. 000000)</string>
+    <string name="hint_item">Item (Ex. LSE 130x55x2300x2,00)</string>
+    <string name="fm_desc">Insira as informações dos itens conforme exemplo abaixo</string>
+    <string name="inserir_apontamento">Novo Apontamento</string>
+    <string name="error_msg">Os campos devem ser preenchidos conforme exemplo</string>
+    <string name="set_tittle_dialog">Item insero com sucesso</string>
+    <string name="set_message_dialog">O item foi inserido dentro do pedido!</string>
+    <string name="error_msg_length">O campo pedido deve conter 6 digitos preenchidos</string>
+    <string name="prosseguir">Prosseguir</string>
+    <string name="apontamento">Novo Apontamento</string>
+    <string name="consulta_apontamento">Consultar Apontamentos</string>
+    <string name="save">Salvar</string>
+    <string name="salvado">Salvado!</string>
+</resources>

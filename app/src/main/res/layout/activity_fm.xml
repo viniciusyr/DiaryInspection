@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".FmActivity">
+
+        <TextView
+            style="@style/TextViewForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fm_desc"/>
+
+        <EditText
+            android:id="@+id/edit_txt_pedido"
+            style="@style/EditTextForm"
+            android:hint="@string/hint_fm"
+            android:maxLength="6"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/edit_txt_item"
+            style="@style/EditTextForm"
+            android:hint="@string/hint_item" />
+
+        <Button
+            android:id="@+id/btn_appointment_fm"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Inserir"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/custom_button"
+            android:textAllCaps="false"/>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

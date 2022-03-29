@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="12dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="10dp"
+    >
+
+    <Button
+        android:id="@+id/btn_novo_apontamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="@drawable/button_state_list_animator"
+        android:onClick="SecondActivity"
+        android:text="@string/apontamento"
+        android:textColor="@color/white" />
+
+</LinearLayout>
