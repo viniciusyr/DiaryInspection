@@ -5,17 +5,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.graphics.Color;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +34,7 @@ public class SecondActivity extends AppCompatActivity {
         rvSecond.setLayoutManager(new LinearLayoutManager(this));
         SecondAdapter adapter = new SecondAdapter(mainItems);
         adapter.setListener(id -> {
-            switch (id){
+            switch (id) {
                 case 1:
                     startActivity(new Intent(SecondActivity.this, FmActivity.class));
                     break;
@@ -46,7 +42,7 @@ public class SecondActivity extends AppCompatActivity {
                     startActivity(new Intent(SecondActivity.this, ConsultActivity.class));
                     break;
             }
-                            });
+        });
         rvSecond.setAdapter(adapter);
     }
 
@@ -71,8 +67,8 @@ public class SecondActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(@NonNull SecondViewHolder holder, int position) {
-          MainItem current =  mainItems.get(position);
-          holder.bind(current);
+            MainItem current = mainItems.get(position);
+            holder.bind(current);
 
         }
 
@@ -92,7 +88,7 @@ public class SecondActivity extends AppCompatActivity {
                 LinearLayout container = (LinearLayout) itemView;
 
                 btnName.setOnClickListener(View -> {
-                    listener.onClick(current.getId());
+                            listener.onClick(current.getId());
                         }
                 );
 

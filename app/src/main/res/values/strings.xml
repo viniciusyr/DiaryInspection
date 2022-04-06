@@ -14,4 +14,6 @@
     <string name="consulta_apontamento">Consultar Apontamentos</string>
     <string name="save">Salvar</string>
     <string name="salvado">Salvado!</string>
+    <string name="procurar">Procurar Pedido</string>
+    <string name="list_response">Pedido: %1, data: %2$s</string>
 </resources>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.util.Log;
@@ -39,8 +40,7 @@ public class FmActivity extends AppCompatActivity {
             String sPedido = editPedido.getText().toString();
             String sItem = editItem.getText().toString();
 
-            String pedido = String.valueOf(sPedido);
-            String item = String.valueOf(editItem);
+            Integer pedido = Integer.valueOf(String.valueOf(sPedido));
 
             AlertDialog dialog = new AlertDialog.Builder(FmActivity.this)
                     .setTitle(R.string.set_tittle_dialog).setMessage("O item " + sItem + " foi inserido com sucesso dentro do pedido " + sPedido)
@@ -50,10 +50,14 @@ public class FmActivity extends AppCompatActivity {
                     .setNegativeButton(R.string.save, ((dialog1, which) -> {
 
                         new Thread(() -> {
-                            long fmId = SqlHelper.getInstance(FmActivity.this).addItem("num_pedido", pedido);
+                            long fmId = SqlHelper.getInstance(FmActivity.this).addItem(pedido, sItem);
                             runOnUiThread(() -> {
                                 if (fmId > 0)
                                     Toast.makeText(FmActivity.this, R.string.salvado, Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(FmActivity.this, ConsultActivity.class);
+                                    intent.putExtra("type", "id_pedido");
+
+                                    startActivity(intent);
                             });
                         }).start();
 
