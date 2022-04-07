@@ -28,8 +28,9 @@ public class ConsultActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
 
         if(extras != null) {
-            String type = extras.getString("type");
-                List<Register> registers = SqlHelper.getInstance(this).getRegisterBy(Integer.parseInt(type));
+            int type = extras.getInt("type");
+
+                List<Register> registers = SqlHelper.getInstance(this).getRegistersBy(type);
                     Log.d("Teste", registers.toString());
 
         }

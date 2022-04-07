@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity"
     android:orientation="vertical"
-    android:background="@drawable/bg_main_img"
     android:paddingStart="12dp"
     android:paddingTop="230dp">
 
